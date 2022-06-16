@@ -25,15 +25,64 @@
         </header>
         <div class="main-slide">
             <div class="main-slide__content">
-                <div class="main-slide__img"></div>
-                <div class="main-slide__txt">
-                    <h2>NEW 로즈 하이드라<br />글로리 앰플</h2>
-                    <p>한 겹으로 간 결 다른 고밀도 수분광</p>
-                    <a href="#">자세히 보기</a>
-                </div>
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="main-slide__img"></div>
+                            <div class="main-slide__txt">
+                                <h2>NEW 로즈 하이드라<br />글로리 앰플</h2>
+                                <p>한 겹으로 간 결 다른 고밀도 수분광</p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="main-slide__img"></div>
+                            <div class="main-slide__txt">
+                                <h2>AP<br />화이팅</h2>
+                                <p></p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+                
             </div>
         </div>
-        <div class="">
-            
+        <div class="main-section main-solution">
+            <div class="main-section__head">
+                <h2>Skincare Solution</h2>
+                <span>Recommended</span>
+            </div>
+            <div class="main-section__body">
+                <div class="main-solution__txt">
+                    <ul>
+                        <li><span>#저자극탄력</span></li>
+                        <li><span>#장벽 강화</span></li>
+                        <li><span>#자극 진정</span></li>
+                        <li><span>#100시간 보습력</span></li>
+                    </ul>
+                </div>
+                <div class="main-solution__slide">
+                    
+            </div>
         </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              cssMode: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
     </body>
