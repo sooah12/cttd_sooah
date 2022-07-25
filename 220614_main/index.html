@@ -33,7 +33,7 @@
                             <div class="main-slide__txt">
                                 <h2 class="section-title">NEW 로즈 하이드라<br />글로리 앰플</h2>
                                 <p class="section-desc">한 겹으로 간 결 다른 고밀도 수분광</p>
-                                <a href="#">자세히 보기</a>
+                                <a href="#" class="btn_detail">자세히 보기</a>
                             </div>
                         </li>
                         <li class="swiper-slide">
@@ -41,54 +41,151 @@
                             <div class="main-slide__txt">
                                 <h2 class="section-title">AP팀<br />화이팅</h2>
                                 <p class="section-desc">아모레퍼시픽</p>
-                                <a href="#">자세히 보기</a>
+                                <a href="#" class="btn_detail">자세히 보기</a>
                             </div>
                         </li>
                     </ul>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
-                  </div>
-            </div>
-                
+                </div>
             </div>
         </div>
         <div class="main-section main-solution">
-            <div class="main-section__head">
+            <div class="main-solution__head">
                 <h2 class="section-title">Skincare Solution</h2>
-                <span class="text-style-01">Recommended</span>
+                <span class="text-style__01">Recommended</span>
             </div>
-            <div class="main-section__body">
-                <div class="main-solution__txt">
-                    <ul>
-                        <li class="focus-on"><span>#저자극탄력</span></li>
-                        <li><span>#장벽 강화</span></li>
-                        <li><span>#자극 진정</span></li>
-                        <li><span>#100시간 보습력</span></li>
-                    </ul>
-                </div>
-                <div class="main-solution__slide">
-                    <div class="swiper mySwiper-solution">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div>
-                                <a href></a>
+            <div class="main-solution__body">
+                <div #swiperRef="" class="swiper-container main-solution__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.mamonde.com/kr/ko/index.html">
+                                <img src="./img/mamonde_main_02_01_220615.jpg" alt="바쿠치올 레티놀 크림">
+                            </a>
+                            <div class="swiper-slide__text">
+                                <p class="section-title"><span>바쿠치올 레티놀 크림</span></p>
+                                <p class="section-desc">바쿠치올과 순수레티놀의 황금비율<br />
+                                저자극 수분 탄력 크림</p>
                             </div>
-                          </div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
-                          <div class="swiper-slide">Slide 5</div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.mamonde.com/kr/ko/index.html">
+                                <img src="./img/mamonde_main_02_02_220615.jpg" alt="프로바이오틱스 세라마이드 크림">
+                            </a>
+                            <div class="swiper-slide__text">
+                                <p class="section-title"><span>프로바이오틱스 세라마이드 크림</span></p>
+                                <p class="section-desc">플로럴바이오틱스<sup>TM</sup>와 7겹 세라마이드<br />
+                                로 기본부터 탄탄한 건강 장벽 개선</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.mamonde.com/kr/ko/index.html">
+                                <img src="./img/mamonde_main_02_03_220615.jpg" alt="블루 캐모마일 크림">
+                            </a>
+                            <div class="swiper-slide__text">
+                                <p class="section-title"><span>블루 캐모마일 크림</span></p>
+                                <p class="section-desc">블루 캐모마일 추출물과 히아루론산의<br />저자극 수분 진정 크림</p>
+                                저자극 수분 탄력 크림</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.mamonde.com/kr/ko/index.html">
+                                <img src="./img/mamonde_main_02_04_220615.jpg" alt="비타민 판테놀 10 크림">
+                            </a>
+                            <div class="swiper-slide__text">
+                                <p class="section-title"><span>비타민 판테놀 10 크림</span></p>
+                                <p class="section-desc">10% 고함량 판테놀X비타민 포뮬러의 <br />100시간 보습 지속력</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                    
+                <p class="append-buttons">
+                    <button class="prepend-2-slides">#저자극탄력</button>
+                    <button class="prepend-slide">#장벽 강화</button>
+                    <button class="append-slide">#자극 진정</button>
+                    <button class="append-2-slides">#100시간 보습력</button>
+                </p>
             </div>
         </div>
+        <div class="main-section main-exclusive">
+            <div class="main-exclusive__head">
+                <h2 class="section-title">Mamonde Exclusive</h2>
+                <span class="text-styl__01">Event</span>
+            </div>
+            <div class="main-exclusive__body">
+                <div class="swiper main-exclusive__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__text">
+                            <span class="swiper-slide__number">01</span>
+                            <p class="section-title">NEW 로즈앰플</p>
+                            <p class="section-desc">
+                                #수분광수직끌올<br />
+                                #로즈마스크증정
+                            </p>
+                            <a href="#" class="btn_detail">자세히보기</a>
+                        </div>
+                        <div class="swiper-slide__img">
+                            <img src="./img/mamonde_main_03_01_220615.jpg" alt="Rose Ampoule" />
+                            <img src="./img/mamonde_main_03_02_220615.jpg" alt="Rose PHA liquid mask" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__text">
+                            <span class="swiper-slide__number">02</span>
+                            <p class="section-title">NEW</p>
+                            <p class="section-desc">
+                                #로즈앰플<br />
+                                #로즈앰플
+                            </p>
+                            <a href="#" class="slide__detail">자세히보기</a>
+                        </div>
+                        <div class="swiper-slide__img">
+                            <img src="./img/mamonde_main_03_01_220615.jpg" alt="Rose Ampoule" />
+                            <img src="./img/mamonde_main_03_02_220615.jpg" alt="Rose PHA liquid mask" />
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section main-brandstory">
+            <div class="main-brandstory__head">
+                <p class="section-title">Brand Story</p>
+            </div>
+            <div class="main-brandstory__body">
+                <div class="main-brandstory__img"><img src="./img/mamonde_main_04_220615.jpg" alt="바쿠치올 레티놀 크림, 프로바이오틱스 세라마이드 크림, 블루 캐모마일 크림, 비타민 판테놀 10 크림"  /></ㅇ>
+                <div class="main-brandstory__text">
+                    <p>
+                    '나의 세계'에 집중할 수 있도록<br />
+                    피부 고민은 마몽드가 할게요.<br /><br />
+                    간결하게 확실하게. 가장 나다운 아름다움
+                    </p>
+                    <a href="#" class="btn_detail"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-section main-withmamonde">
+            <div class="main-withmamonde__head">
+                <p class="section-title">With Mamonde</p>
+            </div>
+            <div class="main-brandstory__body">
+                <ul></ul>
+            </div>
+        </div>
+
+
+        
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
               cssMode: true,
@@ -104,20 +201,69 @@
             });
         </script>
         <script>
-            var swiper = new Swiper(".mySwiper-solution", {
+            var swiper = new Swiper('.main-solution__swiper', {
               slidesPerView: 3,
+              centeredSlides: true,
               spaceBetween: 30,
-              slidesPerGroup: 3,
-              loop: true,
-              loopFillGroupWithBlank: true,
               pagination: {
-                el: ".mySwiper-solution .swiper-pagination",
-                clickable: true,
+                el: '.main-solution__swiper .swiper-pagination',
+                type: 'fraction',
               },
               navigation: {
-                nextEl: ".mySwiper-solution .swiper-button-next",
-                prevEl: ".mySwiper-solution .swiper-button-prev",
+                nextEl: '.main-solution__swiper .swiper-button-next',
+                prevEl: '.main-solution__swiper .swiper-button-prev',
               },
             });
-          </script>
+        
+            var appendNumber = 4;
+            var prependNumber = 1;
+            document
+              .querySelector('.prepend-2-slides')
+              .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                  '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+                  '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+                ]);
+              });
+            document
+              .querySelector('.prepend-slide')
+              .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                  '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
+                );
+              });
+            document
+              .querySelector('.append-slide')
+              .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                  '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
+                );
+              });
+            document
+              .querySelector('.append-2-slides')
+              .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                  '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+                  '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+                ]);
+              });
+        </script>
+        <script>
+            var swiper = new Swiper(".exclusive_swiper", {
+              cssMode: true,
+              navigation: {
+                nextEl: ".exclusive_swiper .swiper-button-next",
+                prevEl: ".exclusive_swiper .swiper-button-prev",
+              },
+              pagination: {
+                el: ".exclusive_swiper .swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+        </script>
     </body>
