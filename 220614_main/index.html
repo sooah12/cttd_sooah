@@ -12,12 +12,12 @@
             </h1>
             <div class="mamonde-header__menu">
                 <ul>
-                    <li><a href="#">베스트&신제품</a></li>
-                    <li><a href="#">제품</a></li>
-                    <li><a href="#">브랜드</a></li>
+                    <li  class="mamonde-header__list"><a href="#">베스트&신제품</a></li>
+                    <li  class="mamonde-header__list"><a href="#">제품</a></li>
+                    <li  class="mamonde-header__list"><a href="#">브랜드</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="mamonde-header__button">
                 <a href="#">로그인</a>
                 <a href="#">매장찾기</a>
                 <button>검색</button>
@@ -30,16 +30,16 @@
                         <li class="swiper-slide">
                             <div class="main-slide__img"></div>
                             <div class="main-slide__txt">
-                                <h2>NEW 로즈 하이드라<br />글로리 앰플</h2>
-                                <p>한 겹으로 간 결 다른 고밀도 수분광</p>
+                                <h2 class="section-title">NEW 로즈 하이드라<br />글로리 앰플</h2>
+                                <p class="section-desc">한 겹으로 간 결 다른 고밀도 수분광</p>
                                 <a href="#">자세히 보기</a>
                             </div>
                         </li>
                         <li class="swiper-slide">
                             <div class="main-slide__img"></div>
                             <div class="main-slide__txt">
-                                <h2>AP<br />화이팅</h2>
-                                <p></p>
+                                <h2 class="section-title">AP팀<br />화이팅</h2>
+                                <p class="section-desc">아모레퍼시픽</p>
                                 <a href="#">자세히 보기</a>
                             </div>
                         </li>
@@ -54,19 +54,36 @@
         </div>
         <div class="main-section main-solution">
             <div class="main-section__head">
-                <h2>Skincare Solution</h2>
-                <span>Recommended</span>
+                <h2 class="section-title">Skincare Solution</h2>
+                <span class="text-style-01">Recommended</span>
             </div>
             <div class="main-section__body">
                 <div class="main-solution__txt">
                     <ul>
-                        <li><span>#저자극탄력</span></li>
+                        <li class="focus-on"><span>#저자극탄력</span></li>
                         <li><span>#장벽 강화</span></li>
                         <li><span>#자극 진정</span></li>
                         <li><span>#100시간 보습력</span></li>
                     </ul>
                 </div>
                 <div class="main-solution__slide">
+                    <div class="swiper mySwiper-solution">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
                     
             </div>
         </div>
@@ -83,6 +100,23 @@
               },
               mousewheel: true,
               keyboard: true,
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".mySwiper-solution", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
             });
           </script>
     </body>
