@@ -7,18 +7,18 @@
         <link rel="stylesheet" type="text/css" href="./style.css" >
     </head>
     <body>
-        <header class="mamonde-header">
-            <h1 class="mamode-title">
-                <a href="#">Mamonde</a>
+        <header class="header">
+            <h1 class="header-title">
+                <a href="#"><img src="./img/mamonde_w_logo.png" alt="Mamonde"></a>
             </h1>
-            <div class="mamonde-header__menu">
+            <div class="header-menu">
                 <ul>
-                    <li  class="mamonde-header__list"><a href="#">베스트&amp;신제품</a></li>
-                    <li  class="mamonde-header__list"><a href="#">제품</a></li>
-                    <li  class="mamonde-header__list"><a href="#">브랜드</a></li>
+                    <li class="mamonde-header__list"><a href="#">베스트&amp;신제품</a></li>
+                    <li class="mamonde-header__list"><a href="#">제품</a></li>
+                    <li class="mamonde-header__list"><a href="#">브랜드</a></li>
                 </ul>
             </div>
-            <div class="mamonde-header__button">
+            <div class="header-btnlist">
                 <a href="#">로그인</a>
                 <a href="#">매장찾기</a>
                 <button>검색</button>
@@ -29,7 +29,9 @@
                 <div class="swiper mySwiper">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
-                            <div class="main-slide__img"></div>
+                            <div class="main-slide__img">
+                                <img src="./img/mamonde_main_01_220615.jpg" alt="마몽드 로즈 하이드라 글로리 앰플">
+                            </div>
                             <div class="main-slide__txt">
                                 <h2 class="section-title">NEW 로즈 하이드라<br />글로리 앰플</h2>
                                 <p class="section-desc">한 겹으로 간 결 다른 고밀도 수분광</p>
@@ -37,7 +39,9 @@
                             </div>
                         </li>
                         <li class="swiper-slide">
-                            <div class="main-slide__img"></div>
+                            <div class="main-slide__img">
+                                <img src="./img/mamonde_main_01_220615.jpg" alt="마몽드 로즈 하이드라 글로리 앰플">
+                            </div>
                             <div class="main-slide__txt">
                                 <h2 class="section-title">AP팀<br />화이팅</h2>
                                 <p class="section-desc">아모레퍼시픽</p>
@@ -57,7 +61,7 @@
                 <span class="text-style__01">Recommended</span>
             </div>
             <div class="main-solution__body">
-                <div #swiperRef="" class="swiper-container main-solution__swiper">
+                <div class="swiper-container main-solution__swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="https://www.mamonde.com/kr/ko/index.html">
@@ -161,7 +165,7 @@
                 <p class="section-title">Brand Story</p>
             </div>
             <div class="main-brandstory__body">
-                <div class="main-brandstory__img"><img src="./img/mamonde_main_04_220615.jpg" alt="바쿠치올 레티놀 크림, 프로바이오틱스 세라마이드 크림, 블루 캐모마일 크림, 비타민 판테놀 10 크림"  /></ㅇ>
+                <div class="main-brandstory__img"><img src="./img/mamonde_main_04_220615.jpg" alt="바쿠치올 레티놀 크림, 프로바이오틱스 세라마이드 크림, 블루 캐모마일 크림, 비타민 판테놀 10 크림"  /></div>
                 <div class="main-brandstory__text">
                     <p>
                     '나의 세계'에 집중할 수 있도록<br />
@@ -181,23 +185,57 @@
             </div>
         </div>
 
-
+        <footer class="footer">
+            <div class="footer__info">
+                <div class="footer__icon-list">
+                    <a href="#"><img src="./img/icon_facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/icon_instagram.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./img/icon_youtube.png" alt="유튜브"></a>
+                </div>
+                <div class="footer__info-list">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">UGC 이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리방침</a></li>
+                        <li><a href="#">뷰티포인트</a></li>
+                    </ul>
+                    <p>고객서비스센터(수신자요금부담) 080-023-5454(월~금 : AM 09:00 ~ PM 06:00)</p>
+                    <p>&copy; AMOREPACIFIC CORPORATION. ALL rights reserved.</p>
+                    <span>WA 로고 </span>
+                </div>
+            </div>
+            <div class="footer__language">
+                <button class="change-language" >한국 / 한국어</button>
+                <ul class="language-list">
+                    <li><a href="#">한국 / 한국어</a></li>
+                    <li><a href="#">International / English</a></li>
+                    <li><a href="#">中国大陆 / 中文</a></li>
+                </ul>
+            </div>
+        </footer>
         
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        
         <script>
             var swiper = new Swiper(".mySwiper", {
-              cssMode: true,
+            // spaceBetween: 30,
+            // centeredSlides: true,
+            // autoplay: {
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".mySwiper .swiper-pagination",
+                type: "progressbar",
+              },
               navigation: {
                 nextEl: ".mySwiper .swiper-button-next",
                 prevEl: ".mySwiper .swiper-button-prev",
               },
-              pagination: {
-                el: ".mySwiper .swiper-pagination",
-              },
-              mousewheel: true,
-              keyboard: true,
             });
         </script>
         <script>
@@ -253,14 +291,14 @@
               });
         </script>
         <script>
-            var swiper = new Swiper(".exclusive_swiper", {
+            var swiper = new Swiper(".main-exclusive__swiper", {
               cssMode: true,
               navigation: {
-                nextEl: ".exclusive_swiper .swiper-button-next",
-                prevEl: ".exclusive_swiper .swiper-button-prev",
+                nextEl: ".main-exclusive__swiper .swiper-button-next",
+                prevEl: ".main-exclusive__swiper .swiper-button-prev",
               },
               pagination: {
-                el: ".exclusive_swiper .swiper-pagination",
+                el: ".main-exclusive__swiper .swiper-pagination",
               },
               mousewheel: true,
               keyboard: true,

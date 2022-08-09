@@ -9,7 +9,14 @@ body {
   }
 ul,ol{
   list-style: none;
+  padding-inline-start: 0;
 } 
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+/* 슬라이드 영역 */
 .swiper-container, .swiper {
   width: 100%;
   height: 100%;
@@ -20,7 +27,6 @@ ul,ol{
   height: 100%;
   object-fit: cover;
 }
-
 .mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -39,7 +45,9 @@ ul,ol{
     -webkit-align-items: center;
     align-items: center;
 } 
-
+.main-solution__swiper{
+  position: relative;overflow: hidden;
+}
 .main-solution__swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -59,18 +67,15 @@ ul,ol{
   -webkit-align-items: center;
   align-items: center;
 }
-
 .main-solution__swiper .swiper-container {
   width: 100%;
   height: 300px;
   margin: 20px auto;
 }
-
 .main-solution__swiper .append-buttons {
   text-align: center;
   margin-top: 20px;
 }
-
 .main-solution__swiper .append-buttons button {
   display: inline-block;
   cursor: pointer;
@@ -82,7 +87,6 @@ ul,ol{
   margin: 0 10px;
   font-size: 13px;
 }
-
 .main-exclusive__swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -101,4 +105,58 @@ ul,ol{
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+/* 헤더 영역 */
+.header{
+  display: flex;
+  max-width: 1264px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+h1.header-title{
+  margin: 0;
+}
+.header-title a img{
+  width: 25%;
+}
+.header-menu ul{
+  display: flex;
+}
+.header-menu ul li a{
+  color: #fff;
+}
+
+/* 메인 슬라이드 영역 */
+.main-slide__content{
+  position: relative;
+}
+.main-slide__content .swiper-slide{
+  position: relative;
+}
+.main-slide__content .swiper-pagination {
+  width: 30%;
+  top: 70%;
+  left: 15%;
+}
+.main-slide__content .swiper-pagination-progressbar{
+  background:rgba(255,255,255,.3)
+}
+.main-slide__content .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  --swiper-theme-color:#fff;
+}
+.main-slide__content .main-slide__txt{
+  position:absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+}
+.main-slide__content .main-slide__txt .section-title{
+  font-size:45px;
+}
+.main-slide__content .main-slide__txt .section-desc{
+  font-size:24px;
 }
