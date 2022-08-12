@@ -2,6 +2,7 @@
 body {
     position: relative;
     height: 100%;
+    margin: 0;
   }
 .swiper {
     width: 100%;
@@ -54,7 +55,7 @@ a{
   background: #fff;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -65,7 +66,7 @@ a{
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center; */
 }
 .main-solution__swiper .swiper-container {
   width: 100%;
@@ -109,23 +110,56 @@ a{
 
 /* 헤더 영역 */
 .header{
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.header-wrap{
+  position: relative;
   max-width: 1264px;
   margin: 0 auto;
+  display: flex;
+  vertical-align: middle;
   justify-content: space-between;
   align-items: center;
 }
 h1.header-title{
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin: 0;
 }
+.header-title a{
+  display: inline-block;
+  width: 140px;
+  padding: 8px 10px;
+}
 .header-title a img{
-  width: 25%;
+  width: 100%;
 }
 .header-menu ul{
   display: flex;
 }
 .header-menu ul li a{
+  display: inline-block;
   color: #fff;
+  padding: 8px 10px;
+  margin-right: 105px;
+}
+.header-menu ul li:last-child a{
+  margin-right: 0;
+}
+.header-btnlist a{
+  display: inline-block;
+  color: #fff;
+  padding: 8px 10px;
+}
+.header-btnlist button{
+  border: none;
+  background: none;
+  padding: 8px 10px;
+  vertical-align: middle;
 }
 
 /* 메인 슬라이드 영역 */
@@ -135,9 +169,13 @@ h1.header-title{
 .main-slide__content .swiper-slide{
   position: relative;
 }
+ul.swiper-wrapper{
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
 .main-slide__content .swiper-pagination {
   width: 30%;
-  top: 70%;
+  top: 75%;
   left: 15%;
 }
 .main-slide__content .swiper-pagination-progressbar{
@@ -156,7 +194,22 @@ h1.header-title{
 }
 .main-slide__content .main-slide__txt .section-title{
   font-size:45px;
+  margin-top: 0;
 }
 .main-slide__content .main-slide__txt .section-desc{
   font-size:24px;
+}
+.main-slide__content .main-slide__txt a.btn_detail{
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 8px 25px;
+}
+.main-slide__content .swiper-button-next, .main-slide__content .swiper-button-prev{
+  --swiper-theme-color:#fff
+}
+
+/* main-section 공통 */
+.main-section h2.section-title{
+  font-size: 40px;
 }
