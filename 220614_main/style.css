@@ -162,6 +162,15 @@ h1.header-title{
   vertical-align: middle;
 }
 
+/* main-section 공통 */
+.main-section{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main-section h2.section-title{
+  font-size: 40px;
+}
+
 /* 메인 슬라이드 영역 */
 .main-slide__content{
   position: relative;
@@ -209,7 +218,79 @@ ul.swiper-wrapper{
   --swiper-theme-color:#fff
 }
 
-/* main-section 공통 */
-.main-section h2.section-title{
-  font-size: 40px;
+/* Brand Story section */
+.main-brandstory .main-brandstory__body{
+  display: flex;
+}
+
+
+/* With Mamonde section */
+.main-withmamonde {
+  font-size: 0;
+}
+.main-withmamonde .brandstory-btn-wrap{
+  margin: 50px 0 70px;
+  text-align: center;
+}
+.main-withmamonde .brandstory-detail-btn{
+  display: inline-block;
+  padding: 10px 50px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+/* footer */
+.footer{
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_icon{
+  display: inline-block;
+}
+.footer_icon:nth-child(2){
+  margin: 0 25px ;
+}
+.footer__info-list{
+  position: relative;
+}
+.footer__info-list ul{
+  display: flex;
+}
+.footer__info-list ul li{
+  position: relative;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.footer__info-list ul li:first-child{
+  padding: 0 10px 0 0;
+}
+.footer__info-list ul li::after{
+  content: '';
+  position: absolute;
+  top: 51%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 7px;
+  background-color: #333;
+}
+.footer__info-list ul li:last-child::after{
+  content: none;
+  display: none;
+}
+
+.footer__info-list p{
+  font-size: 14px;
+}
+
+.ft_web_logo{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer .change-language{
+  font-size: 16px;
+  padding: 8px 20px;
 }
