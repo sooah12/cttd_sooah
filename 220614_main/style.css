@@ -12,6 +12,9 @@ ul,ol{
   list-style: none;
   padding-inline-start: 0;
 } 
+p{
+  margin: 0;
+}
 a{
   text-decoration: none;
   color: #333;
@@ -222,6 +225,24 @@ ul.swiper-wrapper{
 .main-brandstory .main-brandstory__body{
   display: flex;
 }
+.main-brandstory .img_wrap{
+  width: 57.8%;
+  font-size: 0;
+}
+.main-brandstory .img_wrap img{
+  width: 100%;
+}
+.main-brandstory .text_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42.2%;
+  background-color: #e3e0e6;
+}
+.main-brandstory .text_wrap .section-text{
+  width: 100%;
+  margin: 0 60px;
+}
 
 
 /* With Mamonde section */
@@ -280,11 +301,9 @@ ul.swiper-wrapper{
   content: none;
   display: none;
 }
-
 .footer__info-list p{
   font-size: 14px;
 }
-
 .ft_web_logo{
   position:absolute;
   right: 0;
