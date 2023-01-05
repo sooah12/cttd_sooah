@@ -172,6 +172,7 @@ h1.header-title{
 }
 .main-section h2.section-title{
   font-size: 40px;
+  margin: 0;
 }
 
 /* 메인 슬라이드 영역 */
@@ -187,7 +188,7 @@ ul.swiper-wrapper{
 }
 .main-slide__content .swiper-pagination {
   width: 30%;
-  top: 75%;
+  top: 80%;
   left: 15%;
 }
 .main-slide__content .swiper-pagination-progressbar{
@@ -210,6 +211,7 @@ ul.swiper-wrapper{
 }
 .main-slide__content .main-slide__txt .section-desc{
   font-size:24px;
+  margin: 15px 0 65px 0;
 }
 .main-slide__content .main-slide__txt a.btn_detail{
   color: #fff;
@@ -219,6 +221,13 @@ ul.swiper-wrapper{
 }
 .main-slide__content .swiper-button-next, .main-slide__content .swiper-button-prev{
   --swiper-theme-color:#fff
+}
+/* Skincare Solution section */
+.main-solution{
+  margin-top: 85px;
+}
+.main-solution .main-solution__body{
+  display: flex;
 }
 
 /* Brand Story section */
