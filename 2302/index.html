@@ -9,11 +9,13 @@
 
   <script>
     function color() {
-      var body = document.body;
-      var backgroundColor = body.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
+        var body = document.body;
+        var backgroundColor = body.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
 
-      body.style.backgroundColor = backgroundColor;
+        body.style.backgroundColor = backgroundColor;
     }
+
+    setInterval(color, 200);
 
     function stop() {
       clearInterval(intervalId);
