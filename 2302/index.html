@@ -5,24 +5,8 @@
 </head>
 
 <body>
-  <button onclick="stop()">Stop</button>
 
-  <script>
-    function color() {
-        var body = document.body;
-        var backgroundColor = body.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
-
-        body.style.backgroundColor = backgroundColor;
-    }
-
-    setInterval(color, 200);
-
-    function stop() {
-      clearInterval(intervalId);
-    }
-
-    var intervalId = setInterval(color, 200);
-  </script>
+ 
 
 </body>
 
