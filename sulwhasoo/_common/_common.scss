@@ -1,0 +1,91 @@
+$viewport-pc: 1920;
+$viewport-mo: 768;
+$viewport-tablet: 1024;
+
+@import "public/assets/css/functions";
+@import "public/assets/css/mixin";
+
+.post {
+  /* Basic Style */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    overflow: visible;
+    box-sizing: content-box;
+    border: 0;
+    background: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .display-mo {
+    display: none;
+  }
+
+  .m-br {
+    display: none;
+  }
+
+  .pc-br {
+    display: block;
+  }
+
+  .blind {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .img-box {
+    display: block;
+  }
+}
+
+@media only all and (max-width: calc($viewport-mo * 1px)) {
+  .post {
+    .display-pc {
+      display: none;
+    }
+
+    .display-mo {
+      display: block;
+    }
+
+    .pc-br {
+      display: none;
+    }
+
+    .m-br {
+      display: block;
+    }
+  }
+}
