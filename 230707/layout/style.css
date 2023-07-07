@@ -1,0 +1,240 @@
+@charset "UTF-8";
+.bestseller2023-section{font-family:Theinhardt,NotoSans,"Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;font-weight:500;color:#000;text-align:center}
+.bestseller2023-section p{margin:0;padding:0}
+.bestseller2023-section video{width:100%;display:block}
+.bestseller2023-section .mo-only,
+.bestseller2023-section .ta-only{display:none}
+.bestseller2023-section--intro{position:relative}
+.bestseller2023-section--intro .intro-wrap--content{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:1920px;z-index:2}
+.bestseller2023-section--intro .intro-swiper__video{position:relative}
+.bestseller2023-section--intro .intro-swiper__video::after{position:absolute;top:0;left:0;padding:0 16.6666666667% 5.46875%}
+@keyframes fadeInOut{
+0%,
+100%{opacity:0}
+50%{opacity:1}
+}.bestseller2023-section--intro .intro-swiper__video .fade-text{opacity:0}
+.bestseller2023-section--intro .intro-swiper__video .fade-text.is-active{opacity:1}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text{text-align:left;color:#fff}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{font-weight:500;line-height:1.12;font-size:50px;margin-bottom:20px}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title .txt-en{font-weight:500;letter-spacing:0;font-size:49px}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{font-weight:700;letter-spacing:-.02em;font-size:28px;margin-bottom:5px}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko .txt-num{font-weight:500;font-size:34px}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{font-weight:500;letter-spacing:.1em;font-size:20px;margin-top:-5px}
+.bestseller2023-section--intro .bestseller2023-text-wrap{position:absolute;bottom:0;left:0;padding:0 16.6666666667% 5.46875%}
+.bestseller2023-section--intro .bestseller2023-text{text-align:left;color:#fff}
+.bestseller2023-section--intro .bestseller2023-text--title{font-weight:500;line-height:1.12;font-size:50px;margin-bottom:20px}
+.bestseller2023-section--intro .bestseller2023-text--title .txt-en{font-weight:500;letter-spacing:0;font-size:49px}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{font-weight:700;letter-spacing:-.02em;font-size:28px;margin-bottom:5px}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko .txt-num{font-weight:500;font-size:34px}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{font-weight:500;letter-spacing:.1em;font-size:20px;margin-top:-5px}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{line-height:1;font-weight:500;letter-spacing:.015em;font-size:40px;margin-top:153px;margin-bottom:19px}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{line-height:1;font-weight:500;letter-spacing:.015em;font-size:22px;margin-bottom:45px}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--name{font-weight:700;letter-spacing:.05em;line-height:1.2307692308;font-size:26px}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{font-weight:500;line-height:1.4117647059;font-size:17px;margin-top:14px}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{letter-spacing:-.01em;line-height:1.0909090909;font-size:22px}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price .txt-num{font-weight:700}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info-box{max-width:804px;width:50%}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content{padding-bottom:35px}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content .img-wrap{margin:0 auto;width:440px}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{font-weight:700;color:#000;display:inline-block;line-height:1.6;min-width:70px;border:1px solid #000;padding:.8830022075% 0;font-size:15px;margin-top:20px;width:128px}
+.bestseller2023-section--prd-info .bestseller2023-btn-more span{display:inline-block;height:100%;vertical-align:text-top}
+.bestseller2023-section--prd-info .bestprd-info-list{position:relative;display:flex;align-items:center;justify-content:center}
+.bestseller2023-section--prd-info .bestprd-info-list--01{flex-direction:row-reverse}
+.bestseller2023-section--prd-info .bestprd-info-list--01 .bestprd-info--img{text-align:left}
+.bestseller2023-section--prd-info .bestprd-info-list--01 .bestprd-info--content{background-color:#faf8f7}
+.bestseller2023-section--prd-info .bestprd-info-list--02{margin-top:86px;margin-bottom:86px}
+.bestseller2023-section--prd-info .bestprd-info-list--02 .bestprd-info--img{text-align:right}
+.bestseller2023-section--prd-info .bestprd-info-list--02 .bestprd-info--content{background-color:#fcf3ed}
+.bestseller2023-section--prd-info .bestprd-info-list--03{flex-direction:row-reverse}
+.bestseller2023-section--prd-info .bestprd-info-list--03 .bestprd-info--img{text-align:left}
+.bestseller2023-section--prd-info .bestprd-info-list--03 .bestprd-info--content{background-color:#f3efeb}
+.bestseller2023-section--prd-info .bestprd-info-list--01::before{position:absolute;top:0;right:50%;width:50%;height:100%;content:"";background-color:#faf8f7;z-index:-1}
+.bestseller2023-section--prd-info .bestprd-info-list--02::before{position:absolute;top:0;left:50%;width:50%;height:100%;content:"";background-color:#fcf3ed;z-index:-1}
+.bestseller2023-section--prd-info .bestprd-info-list--03::before{position:absolute;top:0;right:50%;width:50%;height:100%;content:"";background-color:#f3efeb;z-index:-1}
+.bestseller2023-section--prd-list{padding:6.25% 0}
+.bestseller2023-section--prd-list .prd-list-slide{padding:0 1.71875%;margin:0 auto;max-width:1372px;width:1372px}
+.bestseller2023-section--prd-list .bestseller2023-text--name{font-weight:700;letter-spacing:.015em;line-height:1.25;font-size:24px;margin-top:27px;margin-bottom:7px}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{font-weight:500;letter-spacing:.015em;line-height:1.4375;font-size:16px;min-height:65px}
+.bestseller2023-section--prd-list .bestseller2023-text--price{letter-spacing:-.01em;line-height:1.3333333333;font-size:18px;margin-top:7px}
+.bestseller2023-section--prd-list .bestseller2023-text--price .txt-num{font-weight:700}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{position:relative;display:inline-block;color:#888;letter-spacing:.05em;font-weight:500;font-size:14px;padding-right:18px;margin-top:5.4585152838%}
+.bestseller2023-section--prd-list .bestseller2023-btn-more::after{content:"";position:absolute;top:50%;right:0;transform:translateY(-50%);color:#888;width:8px;height:12px;background:url(https://amc.apglobal.com/image/384224417642/image_hvs7vels1l4kbdmkbeb7liq20u/-FPNG/bestseller_arrow_int_230613.png) no-repeat center;background-size:contain}
+.bestseller2023-section--prd-list .img-wrap{margin:0 auto;width:428px}
+.bestseller2023-section--prd-list .swiper{width:100%;height:100%}
+.bestseller2023-section--prd-list .swiper-slide{text-align:center;font-size:18px;background:#fff;width:33.3333%}
+.bestseller2023-section--prd-list .swiper-button-next.swiper-button-disabled,
+.bestseller2023-section--prd-list .swiper-button-prev.swiper-button-disabled{display:none}
+.bestseller2023-section--prd-list .swiper-button-prev:after{content:"";width:13px;height:20px;background:url(https://amc.apglobal.com/image/384224417642/image_hvs7vels1l4kbdmkbeb7liq20u/-FPNG/bestseller_arrow_int_230613.png) no-repeat center;background-size:contain;transform:rotate(180deg)}
+.bestseller2023-section--prd-list .swiper-button-next:after{content:"";width:13px;height:20px;background:url(https://amc.apglobal.com/image/384224417642/image_hvs7vels1l4kbdmkbeb7liq20u/-FPNG/bestseller_arrow_int_230613.png) no-repeat center;background-size:contain}
+@media (max-width:1920px){
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{font-size:2.6041666667vw;font-size:max(11px,2.6041666667vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{margin-bottom:1.0416666667vw}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title .txt-en{font-size:2.5520833333vw;font-size:max(11px,2.5520833333vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{font-size:1.4583333333vw;font-size:max(11px,1.4583333333vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{margin-bottom:.2604166667vw}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko .txt-num{font-size:1.7708333333vw;font-size:max(11px,1.7708333333vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{font-size:1.0416666667vw;font-size:max(11px,1.0416666667vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{margin-top:-.2604166667vw}
+.bestseller2023-section--intro .bestseller2023-text--title{font-size:2.6041666667vw;font-size:max(11px,2.6041666667vw)}
+.bestseller2023-section--intro .bestseller2023-text--title{margin-bottom:1.0416666667vw}
+.bestseller2023-section--intro .bestseller2023-text--title .txt-en{font-size:2.5520833333vw;font-size:max(11px,2.5520833333vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{font-size:1.4583333333vw;font-size:max(11px,1.4583333333vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{margin-bottom:.2604166667vw}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko .txt-num{font-size:1.7708333333vw;font-size:max(11px,1.7708333333vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{font-size:1.0416666667vw;font-size:max(11px,1.0416666667vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{margin-top:-.2604166667vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{font-size:2.0833333333vw;font-size:max(11px,2.0833333333vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-top:7.96875vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-bottom:.9895833333vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{font-size:1.1458333333vw;font-size:max(11px,1.1458333333vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{margin-bottom:2.34375vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--name{font-size:1.3541666667vw;font-size:max(11px,1.3541666667vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{font-size:.8854166667vw;font-size:max(11px,.8854166667vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{margin-top:.7291666667vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{font-size:1.1458333333vw;font-size:max(11px,1.1458333333vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content{padding-bottom:1.8229166667vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content .img-wrap{width:22.9166666667vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{font-size:.78125vw;font-size:max(11px,.78125vw)}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{margin-top:1.0416666667vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{width:6.6666666667vw}
+.bestseller2023-section--prd-info .bestprd-info-list--02{margin-top:4.4791666667vw}
+.bestseller2023-section--prd-info .bestprd-info-list--02{margin-bottom:4.4791666667vw}
+.bestseller2023-section--prd-list .prd-list-slide{width:71.4583333333vw}
+.bestseller2023-section--prd-list .bestseller2023-text--name{font-size:1.25vw;font-size:max(11px,1.25vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-top:1.40625vw}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-bottom:.3645833333vw}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{font-size:.8333333333vw;font-size:max(11px,.8333333333vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--price{font-size:.9375vw;font-size:max(11px,.9375vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--price{margin-top:.3645833333vw}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{font-size:.7291666667vw;font-size:max(11px,.7291666667vw)}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{padding-right:.9375vw}
+.bestseller2023-section--prd-list .img-wrap{width:22.2916666667vw}
+}@media (max-width:1023px){
+.bestseller2023-section .mo-only,
+.bestseller2023-section .pc-only{display:none}
+.bestseller2023-section .ta-only{display:block}
+.bestseller2023-section--intro .intro-swiper__video::after{padding:0 16.3245356794% 5.5718475073%}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{font-size:2.7370478983vw;font-size:max(11px,2.7370478983vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{margin-bottom:1.0752688172vw}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{line-height:1.1538461538}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title .txt-en{font-size:2.7370478983vw;font-size:max(11px,2.7370478983vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{font-size:1.5640273705vw;font-size:max(11px,1.5640273705vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{margin-bottom:0}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko .txt-num{font-size:1.7595307918vw;font-size:max(11px,1.7595307918vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{font-size:1.0752688172vw;font-size:max(11px,1.0752688172vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{margin-top:-.293255132vw}
+.bestseller2023-section--intro .bestseller2023-text-wrap{padding:0 16.3245356794% 5.5718475073%}
+.bestseller2023-section--intro .bestseller2023-text--title{font-size:2.7370478983vw;font-size:max(11px,2.7370478983vw)}
+.bestseller2023-section--intro .bestseller2023-text--title{margin-bottom:1.0752688172vw}
+.bestseller2023-section--intro .bestseller2023-text--title{line-height:1.1538461538}
+.bestseller2023-section--intro .bestseller2023-text--title .txt-en{font-size:2.7370478983vw;font-size:max(11px,2.7370478983vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{font-size:1.5640273705vw;font-size:max(11px,1.5640273705vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{margin-bottom:0}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko .txt-num{font-size:1.7595307918vw;font-size:max(11px,1.7595307918vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{font-size:1.0752688172vw;font-size:max(11px,1.0752688172vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{margin-top:-.293255132vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{font-size:2.1505376344vw;font-size:max(11px,2.1505376344vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-top:8.3088954057vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-bottom:1.1730205279vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{font-size:1.2707722385vw;font-size:max(11px,1.2707722385vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{margin-bottom:2.4437927664vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--name{font-size:1.5640273705vw;font-size:max(11px,1.5640273705vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{font-size:1.0752688172vw;font-size:max(11px,1.0752688172vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{line-height:1.6}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{font-size:1.3685239492vw;font-size:max(11px,1.3685239492vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{line-height:1.1428571429}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content{padding-bottom:3.4213098729vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{font-size:.9775171065vw;font-size:max(11px,.9775171065vw)}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{margin-top:1.0752688172vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{width:8.7976539589vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{line-height:1.6}
+.bestseller2023-section--prd-list .prd-list-slide{width:67.4486803519vw}
+.bestseller2023-section--prd-list .prd-list-slide{padding:0 4.3988269795%}
+.bestseller2023-section--prd-list .bestseller2023-text--name{font-size:1.6617790811vw;font-size:max(11px,1.6617790811vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-top:1.9550342131vw}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-bottom:.9775171065vw}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{font-size:.9775171065vw;font-size:max(11px,.9775171065vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{line-height:1.5;min-height:50px}
+.bestseller2023-section--prd-list .bestseller2023-text--price{font-size:1.3685239492vw;font-size:max(11px,1.3685239492vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--price{margin-top:.6842619746vw}
+.bestseller2023-section--prd-list .bestseller2023-text--price{line-height:1.1428571429}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{font-size:1.1730205279vw;font-size:max(11px,1.1730205279vw)}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{padding-right:1.1730205279vw}
+.bestseller2023-section--prd-list .bestseller2023-btn-more::after{width:5px;height:9px}
+.bestseller2023-section--prd-list .swiper-button-prev:after{width:7px;height:12px}
+.bestseller2023-section--prd-list .swiper-button-next:after{width:7px;height:12px}
+}@media (max-width:720px){
+.bestseller2023-section .pc-only,
+.bestseller2023-section .ta-only{display:none}
+.bestseller2023-section .mo-only{display:block}
+.bestseller2023-section--intro .intro-swiper__video::after{padding:0 8.3333333333% 15.2777777778%}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{font-size:6.9444444444vw;font-size:max(11px,6.9444444444vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{margin-bottom:4.1666666667vw}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title{line-height:1.1785714286}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--title .txt-en{font-size:8.0555555556vw;font-size:max(11px,8.0555555556vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko{font-size:4.7222222222vw;font-size:max(11px,4.7222222222vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-ko .txt-num{font-size:5.5555555556vw;font-size:max(11px,5.5555555556vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{font-size:3.3333333333vw;font-size:max(11px,3.3333333333vw)}
+.bestseller2023-section--intro .intro-swiper__video .bestseller2023-text--prd-en{margin-top:-.6944444444vw}
+.bestseller2023-section--intro .bestseller2023-text-wrap{padding:0 8.3333333333% 15.2777777778%}
+.bestseller2023-section--intro .bestseller2023-text--title{font-size:6.9444444444vw;font-size:max(11px,6.9444444444vw)}
+.bestseller2023-section--intro .bestseller2023-text--title{margin-bottom:4.1666666667vw}
+.bestseller2023-section--intro .bestseller2023-text--title{line-height:1.1785714286}
+.bestseller2023-section--intro .bestseller2023-text--title .txt-en{font-size:8.0555555556vw;font-size:max(11px,8.0555555556vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko{font-size:4.7222222222vw;font-size:max(11px,4.7222222222vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-ko .txt-num{font-size:5.5555555556vw;font-size:max(11px,5.5555555556vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{font-size:3.3333333333vw;font-size:max(11px,3.3333333333vw)}
+.bestseller2023-section--intro .bestseller2023-text--prd-en{margin-top:-.6944444444vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{font-size:8.3333333333vw;font-size:max(11px,8.3333333333vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-top:23.6111111111vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--title{margin-bottom:3.0555555556vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{font-size:3.8888888889vw;font-size:max(11px,3.8888888889vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{margin-bottom:8.3333333333vw}
+.bestseller2023-section--prd-info .bestseller2023-section__header .bestseller2023-section--subtitle{line-height:1.3333333333}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--name{font-size:6.1111111111vw;font-size:max(11px,6.1111111111vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{font-size:3.8888888889vw;font-size:max(11px,3.8888888889vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{margin-top:1.25vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--desc{line-height:1.5384615385}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{font-size:5vw;font-size:max(11px,5vw)}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestseller2023-text--price{line-height:1.1111111111}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info-box{width:100%}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content{padding-bottom:22.2222222222vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content{padding-top:12.5vw}
+.bestseller2023-section--prd-info .bestseller2023-section__body .bestprd-info--content .img-wrap{width:69.4444444444vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{font-size:3.3333333333vw;font-size:max(11px,3.3333333333vw)}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{margin-top:5.5555555556vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{width:30.5555555556vw}
+.bestseller2023-section--prd-info .bestseller2023-btn-more{padding:3.4722222222% 0;border:2px solid #000;line-height:1.6666666667}
+.bestseller2023-section--prd-info .bestprd-info-list{display:block}
+.bestseller2023-section--prd-info .bestprd-info-list--01 .bestprd-info--img{text-align:center}
+.bestseller2023-section--prd-info .bestprd-info-list--02{margin-top:0;margin-bottom:0}
+.bestseller2023-section--prd-info .bestprd-info-list--02 .bestprd-info--img{text-align:center}
+.bestseller2023-section--prd-info .bestprd-info-list--03 .bestprd-info--img{text-align:center}
+.bestseller2023-section--prd-info .bestprd-info-list--01::before{width:100%;right:0}
+.bestseller2023-section--prd-info .bestprd-info-list--02::before{width:100%;left:0}
+.bestseller2023-section--prd-info .bestprd-info-list--03::before{width:100%;right:0}
+.bestseller2023-section--prd-list{padding:16.6666666667% 1.3888888889%}
+.bestseller2023-section--prd-list .prd-list-slide{width:100%;padding:0}
+.bestseller2023-section--prd-list .bestseller2023-text--name{font-size:4.1666666667vw;font-size:max(11px,4.1666666667vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-top:5.1388888889vw}
+.bestseller2023-section--prd-list .bestseller2023-text--name{margin-bottom:2.7777777778vw}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{font-size:3.6111111111vw;font-size:max(11px,3.6111111111vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{height:15.2777777778vw}
+.bestseller2023-section--prd-list .bestseller2023-text--desc{line-height:1.3076923077}
+.bestseller2023-section--prd-list .bestseller2023-text--price{font-size:3.8888888889vw;font-size:max(11px,3.8888888889vw)}
+.bestseller2023-section--prd-list .bestseller2023-text--price{margin-top:2.0833333333vw}
+.bestseller2023-section--prd-list .bestseller2023-text--price{line-height:1.0714285714}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{font-size:3.0555555556vw;font-size:max(11px,3.0555555556vw)}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{padding-right:3.0555555556vw}
+.bestseller2023-section--prd-list .bestseller2023-btn-more{margin-top:1.4285714286%}
+.bestseller2023-section--prd-list .bestseller2023-btn-more::after{width:10.4761904762%;height:54.5454545455%}
+.bestseller2023-section--prd-list .bestprd-list--03,
+.bestseller2023-section--prd-list .bestprd-list--04{margin:11.1111111111% 0}
+.bestseller2023-section--prd-list .img-wrap{width:48.6111111111vw}
+.bestseller2023-section--prd-list .swiper-slide{display:inline-block;float:left;width:50%}
+.bestseller2023-section--prd-list .swiper-wrapper.bestprd-list-wrap{display:block}
+.bestseller2023-section--prd-list .swiper-button-next,
+.bestseller2023-section--prd-list .swiper-button-prev{display:none}
+}@media (max-width:400px){
+.bestseller2023-section--prd-info .bestseller2023-btn-more{border:1px solid #000}
+}
