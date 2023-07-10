@@ -1,0 +1,144 @@
+
+<footer id="footer" class="footer" ap-type="footer"></footer>
+<nav id="sidenav" role="navigation" class="sidenav">
+  <div class="nd-box sidenav-box">
+    <div class="sidenav-h">
+      <!-- 20160824 a태그 add -->
+      <a href="http://www.sulwhasoo.com/kr/ko" ap-click-area="Header" ap-click-name="Click - Header"
+        ap-click-data="logo">
+        <img src="[%TEST_URL%]resource/img/a/logo.svg" alt="" class="sidenav-h-img">
+        <span class="blind">Sulwhasoo Site Navigation</span>
+      </a>
+      <button class="nav-close-btn">
+        <span class="blind">Sulwhasoo Site Navigation close</span>
+      </button>
+    </div>
+
+    <div class="wrap-nav-contents">
+      <div class="inner-nav-contents" tabindex="0">
+        <div id="global-nav" class="nav-list"></div>
+
+        <section class="nav-misc-section"></section>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script src="[%TEST_URL%]resource/js/bodyScrollLock.min.js"></script>
+<script src="[%TEST_URL%]resource/js/common.min.0.js"></script>
+<script src="[%TEST_URL%]resource/js/new.product.min.0.js"></script>
+<script type="text/javascript">
+  function rollingControlBtn() {
+    var topkvdots = $(".kv-best-seller .slick-dots li");
+    $('.kv-best-seller .btn-control').addClass("dot" + topkvdots.length + "\n");
+
+    var prdkvdots = $(".kv-best-prd .slick-dots li");
+    $('.kv-best-prd .btn-control').addClass("dot" + prdkvdots.length + "\n");
+  }
+
+  $(document).ready(function () {
+    $('.kv-best-seller .slick-wrap').slick({ // TOP KV ROLLING
+      autoplay: true,
+      dots: true,
+      speed: 1000,
+      infinite: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: false
+    });
+
+    $('.kv-best-prd .slick-wrap').slick({ // 윤조 제품 ROLLING
+      autoplay: true,
+      dots: true,
+      speed: 1000,
+      infinite: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      fade: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+
+    $('.kv-best-seller .btn-control').click(function (e) { // TOP KV ROLLING play/stop
+      var isSts = $(this).hasClass('stop');
+      if (isSts) {
+        $('.kv-best-seller .slick-wrap').slick('slickPause');
+        $(this).removeClass('stop').addClass('play').text('재생');
+      } else {
+        $('.kv-best-seller .slick-wrap').slick('slickPlay');
+        $(this).removeClass('play').addClass('stop').text('정지');
+      }
+    });
+
+    $('.kv-best-prd .btn-control').click(function (e) { // 윤조 제품 ROLLING
+      var isSts = $(this).hasClass('stop');
+      if (isSts) {
+        $('.kv-best-prd .slick-wrap').slick('slickPause');
+        $(this).removeClass('stop').addClass('play').text('재생');
+      } else {
+        $('.kv-best-prd .slick-wrap').slick('slickPlay');
+        $(this).removeClass('play').addClass('stop').text('정지');
+      }
+    });
+
+    rollingControlBtn();
+
+
+  });
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha512.js"></script>
+
+
+<script>
+  var toggleflag = function () {
+    var s = true;
+    return function () {
+      s = s == true ? false : true;
+      return s;
+    }
+  }();
+
+  $(document).ready(function () {
+    var dpimeta = $('#dpimeta');
+    if (dpimeta != null && dpimeta.length > 0) {
+      $('#dpimetatoggle').click(function () {
+        if (toggleflag()) dpimeta.show();
+        else dpimeta.hide();
+      });
+    }
+  });
+
+  function trackClicksEx() {
+    return false;
+  }
+</script>
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+	    "@type": "ListItem",
+	    "position": "1",
+	    "name": "베스트셀러",
+	    "item": "https://www.sulwhasoo.com/kr/ko/best/best_seller.html"
+	    }]
+    }
+</script>
+
+</body>
+
+</html>

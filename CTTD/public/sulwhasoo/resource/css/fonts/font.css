@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./NotoSansKR-Light-subset.eot);
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(./NotoSansKR-Light.woff2) format('woff2'),
+    url(./NotoSansKR-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./NotoSansKR-Regular.eot);
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(./NotoSansKR-Regular.woff2) format('woff2'),
+    url(./NotoSansKR-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./NotoSansKR-Medium-subset.eot);
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(./NotoSansKR-Medium-subset.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(./NotoSansKR-Bold.woff2) format('woff2'),url(./NotoSansKR-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(./NotoSansKR-Black.woff2) format('woff2'),url(./NotoSansKR-Black.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Buri';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Arita-buriM-subset.eot);
+  src: url(./Arita-buriM-subset.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'BuriSB';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Arita-buri-SemiBold.eot);
+  src: url(./Arita-buri-SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'AritaL';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./aritta-Light.eot);
+  src: url(./aritta-Light.eot?#iefix) format('embedded-opentype'),
+    url(./aritta-Light.woff) format('woff'),
+    url(./aritta-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Theinhardt';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Theinhardt-Light.woff);
+  unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}
+
+@font-face {
+  font-family: 'Theinhardt';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./Theinhardt-Regular.woff);
+  unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}
+
+@font-face {
+  font-family: 'Theinhardt';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./Theinhardt-Medium.woff);
+  unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}

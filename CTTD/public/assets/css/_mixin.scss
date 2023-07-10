@@ -1,0 +1,330 @@
+@use "sass:math";
+
+/* 반응형 관련 */
+@mixin responsive($type) {
+  $viewport-min: false !default;
+
+  @if ($type == l) {
+    @media (max-width: #{$viewport-l * 1px}) {
+      @content;
+    }
+  } @else if($type == ml) {
+    @media (max-width: #{$viewport-ml * 1px}) {
+      @content;
+    }
+  } @else if($type == m) {
+    @media (max-width: #{$viewport-m * 1px}) {
+      @content;
+    }
+  } @else if($type == s) {
+    @media (max-width: #{$viewport-s * 1px}) {
+      @content;
+    }
+  } @else if ($type == min and $viewport-min) {
+    @media (max-width: #{$viewport-min * 1px}) {
+      @content;
+    }
+  } @else {
+    @media (max-width: #{$type * 1px}) {
+      @content;
+    }
+  }
+}
+
+@mixin vw-s($attr, $val, $maxFontSize: true, $min: 11px) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if ((not $viewport-l) and (not $viewport-m) and (not $viewport-ml)) {
+    #{$attr}: $val * 1px;
+  }
+
+  @include responsive(s) {
+    #{$attr}: get-vw-s($val, $viewport-s, $viewport-s-margin);
+    @if ($attr == font-size and $maxFontSize == true) {
+      #{$attr}: get-vw-max-s($val, $min, $viewport-s, $viewport-s-margin);
+    }
+  }
+  @if ($viewport-min) {
+    @include responsive(min) {
+      @if ($attr == font-size and $maxFontSize == true) {
+        #{$attr}: max(
+          $min,
+          get-vw-min($val, $viewport-s, $viewport-min, $viewport-s-margin)
+        );
+      } @else {
+        #{$attr}: get-vw-min(
+          $val,
+          $viewport-s,
+          $viewport-min,
+          $viewport-s-margin
+        );
+      }
+    }
+  }
+}
+
+@mixin vw-m($attr, $val, $maxFontSize: true, $min: 11px) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if ((not $viewport-l) and (not $viewport-ml)) {
+    #{$attr}: $val * 1px;
+  }
+  @include responsive(m) {
+    #{$attr}: get-vw-m($val);
+    @if ($attr == font-size and $maxFontSize == true) {
+      #{$attr}: get-vw-max-m($val, $min, $viewport-m, $viewport-m-margin);
+    }
+  }
+  @if (
+    ($viewport-min) and
+      (not $viewport-l) and
+      (not $viewport-ml) and
+      (not $viewport-s)
+  ) {
+    @include responsive(min) {
+      @if ($attr == font-size and $maxFontSize == true) {
+        #{$attr}: max(
+          $min,
+          get-vw-min($val, $viewport-m, $viewport-min, $viewport-m-margin)
+        );
+      } @else {
+        #{$attr}: get-vw-min(
+          $val,
+          $viewport-m,
+          $viewport-min,
+          $viewport-m-margin
+        );
+      }
+    }
+  }
+}
+
+@mixin vw-ml($attr, $val, $maxFontSize: true, $min: 12px) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if (not $viewport-l) {
+    #{$attr}: $val * 1px;
+  }
+  @include responsive(ml) {
+    #{$attr}: get-vw-ml($val);
+    @if ($attr == font-size and $maxFontSize == true) {
+      #{$attr}: get-vw-max-ml($val, $min, $viewport-ml, $viewport-ml-margin);
+    }
+  }
+  @if (
+    ($viewport-min) and
+      (not $viewport-l) and
+      (not $viewport-m) and
+      (not $viewport-s)
+  ) {
+    @include responsive(min) {
+      @if ($attr == font-size and $maxFontSize == true) {
+        #{$attr}: max(
+          $min,
+          get-vw-min($val, $viewport-ml, $viewport-min, $viewport-ml-margin)
+        );
+      } @else {
+        #{$attr}: get-vw-min(
+          $val,
+          $viewport-ml,
+          $viewport-min,
+          $viewport-ml-margin
+        );
+      }
+    }
+  }
+}
+
+@mixin vw-l($attr, $val, $maxFontSize: true, $min: 11px) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  #{$attr}: $val * 1px;
+
+  @include responsive(l) {
+    #{$attr}: get-vw-l($val);
+    @if ($attr == font-size and $maxFontSize == true) {
+      #{$attr}: get-vw-max-l($val, $min, $viewport-l, $viewport-l-margin);
+    }
+  }
+  @if (
+    ($viewport-min) and
+      (not $viewport-m) and
+      (not $viewport-ml) and
+      (not $viewport-s)
+  ) {
+    @include responsive(min) {
+      @if ($attr == font-size and $maxFontSize == true) {
+        #{$attr}: max(
+          $min,
+          get-vw-min($val, $viewport-l, $viewport-min, $viewport-l-margin)
+        );
+      } @else {
+        #{$attr}: get-vw-min(
+          $val,
+          $viewport-l,
+          $viewport-min,
+          $viewport-l-margin
+        );
+      }
+    }
+  }
+}
+
+/* 믹스인 */
+@mixin a11y-hidden() {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+  z-index: -1;
+}
+
+@mixin skip-link($top: 8px, $left: 8px) {
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  &:not(:focus) {
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+
+@mixin responsive-media($width: 750, $height: 422) {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: calc($height * 100 / $width) * 1%;
+
+  > .media {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Text stroke(text-shadow) */
+@mixin text-stroke-l($size: 2, $color: #fff, $correction: 0) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  text-shadow: text-stroke($size, $color, $correction, "px", 0);
+
+  @include responsive(l) {
+    text-shadow: text-stroke($size, $color, $correction, "vw", $viewport-l);
+  }
+}
+
+@mixin text-stroke-ml($size: 2, $color: #fff, $correction: 0) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if (not $viewport-l) {
+    text-shadow: text-stroke($size, $color, $correction, "px", 0);
+  }
+
+  @include responsive(ml) {
+    text-shadow: text-stroke($size, $color, $correction, "vw", $viewport-ml);
+  }
+}
+
+@mixin text-stroke-m($size: 2, $color: #fff, $correction: 0) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if ((not $viewport-l) and (not $viewport-ml)) {
+    text-shadow: text-stroke($size, $color, $correction, "px", 0);
+  }
+
+  @include responsive(m) {
+    text-shadow: text-stroke($size, $color, $correction, "vw", $viewport-m);
+  }
+}
+
+@mixin text-stroke-s($size: 2, $color: #fff, $correction: 0) {
+  $viewport-l: false !default;
+  $viewport-l-margin: 0 !default;
+  $viewport-ml: false !default;
+  $viewport-ml-margin: 0 !default;
+  $viewport-m: false !default;
+  $viewport-m-margin: 0 !default;
+  $viewport-s: false !default;
+  $viewport-s-margin: 0 !default;
+  $viewport-min: false !default;
+
+  @if ((not $viewport-l) and (not $viewport-m) and (not $viewport-ml)) {
+    text-shadow: text-stroke($size, $color, $correction, "px", 0);
+  }
+
+  @include responsive(s) {
+    text-shadow: text-stroke($size, $color, $correction, "vw", $viewport-s);
+  }
+}
