@@ -48,14 +48,14 @@
 .bestseller2023-section--prd-list .bestseller2023-text--price{letter-spacing:-.01em;line-height:1.3333333333;font-size:18px;margin-top:7px}
 .bestseller2023-section--prd-list .bestseller2023-text--price .txt-num{font-weight:700}
 .bestseller2023-section--prd-list .bestseller2023-btn-more{position:relative;display:inline-block;color:#888;letter-spacing:-.01em;font-weight:700;font-size:13px;margin-top:22px;padding-right:18px}
-.bestseller2023-section--prd-list .bestseller2023-btn-more::after{content:"";position:absolute;top:55%;right:0;transform:translateY(-50%);color:#888;width:8px;height:12px;background:url(https://amc.apglobal.com/image/384224417642/image_3t50b3ctf14338ph9prdcflu37/-FPNG/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain}
+.bestseller2023-section--prd-list .bestseller2023-btn-more::after{content:"";position:absolute;top:55%;right:0;transform:translateY(-50%);color:#888;width:8px;height:12px;background:url(../../public/sulwhasoo/resource/img/best-seller/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain}
 .bestseller2023-section--prd-list .img-wrap{margin:0 auto;width:428px}
 .bestseller2023-section--prd-list .swiper{width:100%;}
 .bestseller2023-section--prd-list .swiper-slide{text-align:center;font-size:18px;background:#fff;width:33.3333%}
 .bestseller2023-section--prd-list .swiper-button-next.swiper-button-disabled,
 .bestseller2023-section--prd-list .swiper-button-prev.swiper-button-disabled{display:none}
-.bestseller2023-section--prd-list .swiper-button-prev:after{content:"";width:13px;height:20px;background:url(https://amc.apglobal.com/image/384224417642/image_3t50b3ctf14338ph9prdcflu37/-FPNG/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain;transform:rotate(180deg)}
-.bestseller2023-section--prd-list .swiper-button-next:after{content:"";width:13px;height:20px;background:url(https://amc.apglobal.com/image/384224417642/image_3t50b3ctf14338ph9prdcflu37/-FPNG/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain}
+.bestseller2023-section--prd-list .swiper-button-prev:after{content:"";width:13px;height:20px;background:url(../../public/sulwhasoo/resource/img/best-seller/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain;transform:rotate(180deg)}
+.bestseller2023-section--prd-list .swiper-button-next:after{content:"";width:13px;height:20px;background:url(../../public/sulwhasoo/resource/img/best-seller/bestseller_arrow_kr_230526.png) no-repeat center;background-size:contain}
 @media (max-width:1920px){
 .bestseller2023-section--intro .bestseller2023-text--title{font-size:2.34375vw;font-size:max(11px,2.34375vw)}
 .bestseller2023-section--intro .bestseller2023-text--title .txt-en{font-size:2.5520833333vw;font-size:max(11px,2.5520833333vw)}
